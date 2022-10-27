@@ -26,7 +26,7 @@ def main():
     getLink(soup)
     getAdmissionsInfo2019(soup)
 
-class TestAllMethods(unittest.TestCase):
+class TestAllMethods(unittest.TestCase): #do nothing with test function?
     def setUp(self):
         self.soup = BeautifulSoup(requests.get('https://en.wikipedia.org/wiki/University_of_Michigan').text, 'html.parser')
 
